@@ -1,0 +1,150 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Aug 12, 2024 at 14:40:48 CST
+ncverilog
+	tb_term.sv
+	SME_syn.v
+	-v
+	tsmc13_neg.v
+	+ncmaxdelays
+	+define+SDF
+	+access+r
+	+nc64bit
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux x86_64/64bit, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'SME.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+       cycle 31, expect(0,00) , get(0,13) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 3a, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 46, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle 5f, expect(0,00) , get(0,12) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 78, expect(0,00) , get(0,12) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 85, expect(1,02) , get(1,02) >> Pass
+  -- Pattern 7  "^lmno"
+       cycle 98, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle b4, expect(1,10) , get(1,10) >> Pass
+  -- Pattern 9  "^rmn"
+       cycle ce, expect(0,00) , get(0,13) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle eb, expect(0,00) , get(0,11) >> Pass
+  -- Pattern b  "v"
+       cycle 102, expect(1,14) , get(1,14) >> Pass
+  -- Pattern c  "lmnoprst"
+       cycle 11f, expect(0,00) , get(0,0f) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 138, expect(0,00) , get(0,12) >> Pass
+  -- Pattern e  "^q$"
+       cycle 14c, expect(1,0e) , get(1,0e) >> Pass
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 17a, expect(0,00) , get(0,0d) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 18b, expect(1,04) , get(1,04) >> Pass
+  -- Pattern 3  "^2.2.4$"
+       cycle 1a1, expect(1,06) , get(1,06) >> Pass
+  -- Pattern 4  "."
+       cycle 1a4, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 1ab, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 6  "^.$"
+       cycle 1c3, expect(0,00) , get(0,10) >> Pass
+  -- Pattern 7  "2.$"
+       cycle 1e1, expect(0,00) , get(0,10) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 1fd, expect(0,00) , get(0,0e) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 211, expect(0,00) , get(0,0e) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 228, expect(0,00) , get(0,0e) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 23c, expect(1,00) , get(1,00) >> Pass
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 25a, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 2  "ees.$"
+       cycle 275, expect(1,0b) , get(1,0b) >> Pass
+  -- Pattern 3  "e..se"
+       cycle 293, expect(0,00) , get(0,0c) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 2b0, expect(0,00) , get(0,0b) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 2c3, expect(0,00) , get(0,0c) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 2dc, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 7  "he.s"
+       cycle 2e6, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 8  "*see$"
+       cycle 2fe, expect(0,00) , get(0,00) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 315, expect(0,00) , get(0,04) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 35e, expect(0,00) , get(0,08) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle 37d, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 3  "b*tter$"
+       cycle 3ab, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 4  "ut*r"
+       cycle 3c8, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 5  "ut*tted"
+       cycle 3f8, expect(0,00) , get(0,01) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle 41c, expect(0,00) , get(0,1a) >> Pass
+  -- Pattern 7  "*tered"
+       cycle 448, expect(0,00) , get(0,00) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle 488, expect(0,00) , get(0,03) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle 4ac, expect(0,00) , get(0,14) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle 4df, expect(1,0f) , get(1,0f) >> Pass
+  -- Pattern 4  ".ree  fr"
+       cycle 51a, expect(0,00) , get(0,14) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle 542, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 6  "re. thr"
+       cycle 556, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 7  "ee*ee fr"
+       cycle 57d, expect(0,00) , get(0,0c) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle 59f, expect(1,0c) , get(1,0c) >> Pass
+  -- Pattern 9  "re*ee.$"
+       cycle 5c8, expect(0,00) , get(0,05) >> Pass
+  -- Pattern a  "^...$"
+       cycle 5f5, expect(0,00) , get(0,17) >> Pass
+  -- Pattern b  "^....$"
+       cycle 61c, expect(1,0f) , get(1,0f) >> Pass
+----------------------------------
+-- Simulation finish, ALL PASS  --
+-- cycle =1565 , Score =100       --
+----------------------------------
+Simulation complete via $finish(1) at time 31300 NS + 0
+./tb_term.sv:201                     $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s084: Exiting on Aug 12, 2024 at 14:40:50 CST  (total: 00:00:02)
