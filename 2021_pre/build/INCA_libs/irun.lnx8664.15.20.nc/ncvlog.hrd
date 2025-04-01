@@ -1,0 +1,11 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-sv
+-DEFINE
+FSDB_FILE=\"geofence.fsdb\"
+-DEFINE
+SDF
+-DEFINE
+SDFFILE=\"/home/LiauYiShang/Iccontest/2021_pre/syn/geofence_syn.sdf\"

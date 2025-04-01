@@ -1,0 +1,93 @@
+Magic 271485
+Revision Verdi_Q-2020.03
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 1920 23 1920 1137 215 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/LiauYiShang/Iccontest/2023_pre/build/LASER.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 56754756.593420 56809539.126662
+cursor 56806800.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 24
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByValue
+
+
+addGroup "G1"
+activeDirFile "" "/home/LiauYiShang/Iccontest/2023_pre/build/LASER.fsdb"
+addSignal -h 15 /testfixture/u_LASER/CLK
+addSignal -h 15 -holdScope DONE
+addSignal -h 15 -holdScope cur_x[3:0]
+addSignal -h 15 -holdScope cur_y[3:0]
+addSignal -h 15 -holdScope max_x[3:0]
+addSignal -h 15 -holdScope max_y[3:0]
+addSignal -h 15 -holdScope cur_num[5:0]
+addSignal -h 15 -holdScope max_num[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope count[5:0]
+addSignal -h 15 -holdScope state[2:0]
+addGroup "G3"
+addSignal -h 15 /testfixture/u_LASER/C1X[3:0]
+addSignal -h 15 -holdScope C1Y[3:0]
+addSignal -h 15 -holdScope C2X[3:0]
+addSignal -h 15 -holdScope C2Y[3:0]
+addSignal -h 15 -holdScope c1_num[5:0]
+addSignal -h 15 -holdScope c2_num[5:0]
+addGroup "G2"
+addSignal -h 15 /testfixture/u_LASER/cur_overlap[5:0]
+addSignal -h 15 -holdScope overlap_num[5:0]
+addSignal -h 15 -holdScope overlap_num_temp[5:0]
+addGroup "G4"
+addSignal -h 15 /testfixture/u_LASER/in_circle[1:0]
+addSignal -h 15 -holdScope in_circle_temp[39:0]
+addGroup "G5"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/LiauYiShang/Iccontest/2023_pre/build/LASER.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/testfixture"
+"/testfixture/u_LASER"
+
+SCOPE_LIST_BEGIN
+"/testfixture"
+"/testfixture/u_LASER"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

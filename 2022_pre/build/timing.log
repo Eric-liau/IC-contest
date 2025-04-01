@@ -1,0 +1,69 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : JAM
+Version: T-2022.03
+Date   : Tue Feb 18 22:54:11 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: Cost[0] (input port clocked by CLK)
+  Endpoint: count_reg[2]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  JAM                tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (fall edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  input external delay                                    0.00       5.50 f
+  Cost[0] (in)                                            0.01       5.51 f
+  r398/B[0] (JAM_DW01_add_0_DW01_add_1)                   0.00       5.51 f
+  r398/U19/Y (CLKAND2X12)                                 0.09       5.60 f
+  r398/U9/CO (ADDFHX4)                                    0.23       5.83 f
+  r398/U4/Y (NAND2X6)                                     0.09       5.91 r
+  r398/U5/Y (NAND3X4)                                     0.10       6.02 f
+  r398/U1_3/CO (ADDFHX2)                                  0.25       6.27 f
+  r398/U1_4/CO (ADDFHX4)                                  0.25       6.51 f
+  r398/U17/Y (NAND2X1)                                    0.20       6.71 r
+  r398/U12/Y (NAND3X2)                                    0.16       6.87 f
+  r398/U1_6/CO (ADDFHX4)                                  0.25       7.12 f
+  r398/U11/Y (XOR2X1)                                     0.34       7.46 f
+  r398/SUM[7] (JAM_DW01_add_0_DW01_add_1)                 0.00       7.46 f
+  U96/Y (NOR2BX1)                                         0.29       7.76 r
+  U122/Y (CLKINVX1)                                       0.23       7.99 f
+  U121/Y (AO22X1)                                         0.45       8.44 f
+  U147/Y (OA21X2)                                         0.23       8.67 f
+  U84/Y (NAND2X2)                                         0.15       8.82 r
+  U126/Y (NAND2X8)                                        0.11       8.93 f
+  U160/Y (OR2X1)                                          0.30       9.22 f
+  U88/Y (AND2X4)                                          0.24       9.46 f
+  U155/Y (OA21XL)                                         0.40       9.86 f
+  U156/Y (OAI32X1)                                        0.24      10.10 r
+  count_reg[2]/D (DFFRX1)                                 0.00      10.10 r
+  data arrival time                                                 10.10
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  count_reg[2]/CK (DFFRX1)                                0.00      10.40 r
+  library setup time                                     -0.28      10.12
+  data required time                                                10.12
+  --------------------------------------------------------------------------
+  data required time                                                10.12
+  data arrival time                                                -10.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+1

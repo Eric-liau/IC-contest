@@ -1,0 +1,13 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+/home/LiauYiShang/Iccontest/2023_pre/sim/tb.sv
+/home/LiauYiShang/Iccontest/2023_pre/syn/LASER_syn.v
+-v
+/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v
++nc64bit
++access+r
++define+FSDB_FILE=\"LASER.fsdb\"
++define+SDF
++define+SDFFILE=\"/home/LiauYiShang/Iccontest/2023_pre/syn/LASER_syn.sdf\"

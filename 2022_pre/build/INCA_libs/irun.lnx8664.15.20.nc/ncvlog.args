@@ -1,0 +1,28 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+/home/LiauYiShang/Iccontest/2022_pre/sim/tb.sv
+/home/LiauYiShang/Iccontest/2022_pre/syn/JAM_syn.v
+-VFILE
+/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v
+-DEFINE
+FSDB_FILE=\"JAM.fsdb\"
+-DEFINE
+SDF
+-DEFINE
+P3
+-DEFINE
+SDFFILE=\"/home/LiauYiShang/Iccontest/2022_pre/syn/JAM_syn.sdf\"
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

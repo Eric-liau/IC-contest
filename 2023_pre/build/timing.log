@@ -1,0 +1,70 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LASER
+Version: T-2022.03
+Date   : Tue Feb 18 00:56:14 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: overlap_num_temp_reg[5]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LASER              tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  count_reg[2]/CK (DFFRX2)                 0.00       0.50 r
+  count_reg[2]/Q (DFFRX2)                  0.64       1.14 f
+  U2427/Y (NOR3XL)                         0.54       1.67 r
+  U2426/Y (BUFX3)                          0.40       2.07 r
+  U2755/Y (NAND2X2)                        0.44       2.51 f
+  U2756/Y (OAI22XL)                        0.62       3.12 r
+  U2760/Y (NOR4X1)                         0.27       3.40 f
+  U2547/Y (AND4X1)                         0.36       3.76 f
+  U2545/Y (NAND2X1)                        0.58       4.34 r
+  U2489/Y (AOI222X1)                       0.38       4.71 f
+  U2631/Y (INVX3)                          0.20       4.91 r
+  U2821/Y (OAI222X2)                       0.23       5.14 f
+  U2822/Y (INVX4)                          0.18       5.32 r
+  U2551/Y (INVX3)                          0.14       5.45 f
+  U2824/Y (AOI22X1)                        0.24       5.70 r
+  U2632/Y (AOI211X4)                       0.28       5.97 f
+  U2562/Y (OAI21XL)                        0.43       6.41 r
+  U2659/Y (OAI2BB2X1)                      0.33       6.74 f
+  U2405/Y (NOR3X6)                         0.34       7.08 r
+  U2917/Y (NOR2X8)                         0.17       7.25 f
+  U2918/Y (INVX6)                          0.14       7.39 r
+  U2441/Y (NAND2X6)                        0.11       7.50 f
+  U3008/Y (NOR2X4)                         0.27       7.77 r
+  U2596/Y (OAI2BB2XL)                      0.34       8.11 r
+  overlap_num_temp_reg[5]/D (DFFRX1)       0.00       8.11 r
+  data arrival time                                   8.11
+
+  clock CLK (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.50       8.50
+  clock uncertainty                       -0.10       8.40
+  overlap_num_temp_reg[5]/CK (DFFRX1)      0.00       8.40 r
+  library setup time                      -0.29       8.11
+  data required time                                  8.11
+  -----------------------------------------------------------
+  data required time                                  8.11
+  data arrival time                                  -8.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

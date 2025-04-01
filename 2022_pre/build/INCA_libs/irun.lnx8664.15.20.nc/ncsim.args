@@ -1,0 +1,27 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
++nc64bit
++access+r
++define+FSDB_FILE=\"JAM.fsdb\"
++define+SDF
++define++P3
++define+SDFFILE=\"/home/LiauYiShang/Iccontest/2022_pre/syn/JAM_syn.sdf\"
+-MESSAGES
++EMGRLOG
+ncverilog.log
+-XLSTIME
+1739890545
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdl.var
+-XLNAME
+ncverilog
+-XLVERSION
+"TOOL:	ncverilog	15.20-s084"

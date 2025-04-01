@@ -1,0 +1,770 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Mar 04, 2025 at 13:52:31 CST
+ncverilog
+	/home/LiauYiShang/Iccontest/2021_pre/sim/tb.sv
+	/home/LiauYiShang/Iccontest/2021_pre/syn/geofence_syn.v
+	-sv
+	/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+	+nc64bit
+	+access+r
+	+define+FSDB_FILE="geofence.fsdb"
+	+define+SDF
+	+define+SDFFILE="/home/LiauYiShang/Iccontest/2021_pre/syn/geofence_syn.sdf"
+file: /home/LiauYiShang/Iccontest/2021_pre/sim/tb.sv
+`define SDFFILE    "./geofence_syn.sdf"
+                                       |
+ncvlog: *W,MACNDF (/home/LiauYiShang/Iccontest/2021_pre/sim/tb.sv,3|39): The text macro 'SDFFILE' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+file: /home/LiauYiShang/Iccontest/2021_pre/syn/geofence_syn.v
+	module worklib.geofence:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 \hexagon_area_reg[21]  ( .D(n1409), .CK(clk), .RN(n6499), .Q(
+                              |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,705|30): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[19]  ( .D(n1411), .CK(clk), .RN(n6499), .Q(
+                              |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,709|30): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[18]  ( .D(n1412), .CK(clk), .RN(n6499), .Q(
+                              |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,711|30): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[16]  ( .D(n1414), .CK(clk), .RN(n6500), .Q(
+                              |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,715|30): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[15]  ( .D(n1415), .CK(clk), .RN(n6500), .Q(
+                              |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,717|30): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[14]  ( .D(n1416), .CK(clk), .RN(n6500), .Q(
+                              |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,719|30): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[12]  ( .D(n1418), .CK(clk), .RN(n6500), .Q(
+                              |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,723|30): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[11]  ( .D(n1419), .CK(clk), .RN(n6500), .Q(
+                              |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,725|30): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[10]  ( .D(n1420), .CK(clk), .RN(n6500), .Q(
+                              |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,727|30): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[6]  ( .D(n1424), .CK(clk), .RN(n6500), .Q(
+                             |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,735|29): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[5]  ( .D(n1425), .CK(clk), .RN(n6500), .Q(
+                             |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,737|29): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[3]  ( .D(n1427), .CK(clk), .RN(n6501), .Q(
+                             |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,741|29): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[2]  ( .D(n1428), .CK(clk), .RN(n6501), .Q(
+                             |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,743|29): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[1]  ( .D(n1429), .CK(clk), .RN(n6501), .Q(
+                             |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,745|29): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \hexagon_area_reg[0]  ( .D(n1430), .CK(clk), .RN(n6501), .Q(
+                             |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,747|29): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \tri_area_reg[4]  ( .D(n1648), .CK(clk), .RN(n6496), .Q(tri_area[4])
+                         |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,757|25): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \tri_area_reg[6]  ( .D(n1646), .CK(clk), .RN(n6500), .Q(tri_area[6])
+                         |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,761|25): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \tri_area_reg[7]  ( .D(n1645), .CK(clk), .RN(n6498), .Q(tri_area[7])
+                         |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,763|25): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \tri_area_reg[8]  ( .D(n1644), .CK(clk), .RN(n6502), .Q(tri_area[8])
+                         |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,765|25): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \tri_area_reg[9]  ( .D(n1643), .CK(clk), .RN(n6502), .Q(tri_area[9])
+                         |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,767|25): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \tri_area_reg[13]  ( .D(n1639), .CK(clk), .RN(n6502), .Q(tri_area[13]) );
+                          |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,772|26): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \tri_area_reg[15]  ( .D(n1637), .CK(clk), .RN(n6502), .Q(tri_area[15]) );
+                          |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,774|26): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \tri_area_reg[17]  ( .D(n1635), .CK(clk), .RN(n6502), .Q(tri_area[17]) );
+                          |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,776|26): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \tri_area_reg[20]  ( .D(n1632), .CK(clk), .RN(n6501), .Q(tri_area[20]) );
+                          |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,779|26): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \tri_area_reg[24]  ( .D(n1628), .CK(clk), .RN(n6501), .Q(tri_area[24]) );
+                          |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,783|26): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \temp_y_reg[0]  ( .D(n1550), .CK(clk), .RN(n6496), .QN(n6427) );
+                       |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,826|23): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \temp_y_reg[7]  ( .D(n1543), .CK(clk), .RN(n6500), .QN(n6439) );
+                       |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,1087|23): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 is_inside_reg ( .D(N2041), .CK(clk), .RN(n6498), .QN(n1758) );
+                     |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,1088|21): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \temp_y_reg[6]  ( .D(n1544), .CK(clk), .RN(n6501), .QN(n6437) );
+                       |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,1089|23): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \temp_y_reg[5]  ( .D(n1545), .CK(clk), .RN(n6497), .QN(n6435) );
+                       |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,1090|23): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \temp_y_reg[3]  ( .D(n1547), .CK(clk), .RN(n6496), .QN(n6431) );
+                       |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,1091|23): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \temp_y_reg[4]  ( .D(n1546), .CK(clk), .RN(n6499), .QN(n6432) );
+                       |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,1092|23): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \temp_y_reg[2]  ( .D(n1548), .CK(clk), .RN(n6496), .QN(n6425) );
+                       |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,1093|23): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \temp_y_reg[1]  ( .D(n1549), .CK(clk), .RN(n6496), .QN(n6426) );
+                       |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,1094|23): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFTRX2 \x_array_reg[2][1]  ( .D(1'b1), .RN(n1468), .CK(clk), .QN(n6506) );
+                            |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,1281|28): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,19586): Q
+
+  DFFSX2 valid_reg ( .D(n6399), .CK(clk), .SN(n6499), .Q(n6403) );
+                 |
+ncelab: *W,CUVWSP (../syn/geofence_syn.v,1296|17): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18652): QN
+
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "/home/LiauYiShang/Iccontest/2021_pre/syn/geofence_syn.sdf"
+	Compiled SDF file "geofence_syn.sdf.X" older than source SDF file "/home/LiauYiShang/Iccontest/2021_pre/syn/geofence_syn.sdf".
+	Recompiling.
+	Writing compiled SDF file to "geofence_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     geofence_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_geofence
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 19390  Annotated = 88.33% -- No. of Tchecks = 2628  Annotated = 55.48% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	       19390	       17128	       88.33
+		       $hold	          64	           0	        0.00
+		      $width	        1081	         729	       67.44
+		  $setuphold	        1483	         729	       49.16
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ADDFHX2:v <0x3559f8bb>
+			streams:   0, words:     0
+		worklib.ADDFHX4:v <0x28ce5918>
+			streams:   0, words:     0
+		worklib.ADDFX1:v <0x1717d5e7>
+			streams:   0, words:     0
+		worklib.ADDFX2:v <0x74648616>
+			streams:   0, words:     0
+		worklib.ADDHX1:v <0x3f8215de>
+			streams:   0, words:     0
+		worklib.ADDHX2:v <0x15310028>
+			streams:   0, words:     0
+		worklib.CLKMX2X2:v <0x1f0da622>
+			streams:   0, words:     0
+		worklib.CLKMX2X4:v <0x04cadc6d>
+			streams:   0, words:     0
+		worklib.CLKXOR2X4:v <0x5a2da000>
+			streams:   0, words:     0
+		worklib.CMPR42X2:v <0x6f1da337>
+			streams:   0, words:     0
+		worklib.DFFSX2:v <0x3a3df234>
+			streams:   0, words:     0
+		worklib.DFFTRX2:v <0x272f01b9>
+			streams:   0, words:     0
+		worklib.DFFX1:v <0x359ddb84>
+			streams:   0, words:     0
+		worklib.DFFX2:v <0x11782461>
+			streams:   0, words:     0
+		worklib.MX2X1:v <0x070abed8>
+			streams:   0, words:     0
+		worklib.MX2X6:v <0x427ae492>
+			streams:   0, words:     0
+		worklib.MXI2X1:v <0x124380df>
+			streams:   0, words:     0
+		worklib.MXI2X2:v <0x7c2583c6>
+			streams:   0, words:     0
+		worklib.MXI2X4:v <0x7b9883b5>
+			streams:   0, words:     0
+		worklib.XNOR2X2:v <0x790bcbf4>
+			streams:   0, words:     0
+		worklib.XNOR2X4:v <0x4bff89ca>
+			streams:   0, words:     0
+		worklib.XOR2X2:v <0x39ac2695>
+			streams:   0, words:     0
+		worklib.XOR2X4:v <0x0b5864ab>
+			streams:   0, words:     0
+		worklib.XOR3XL:v <0x6d88a241>
+			streams:   0, words:     0
+		worklib.geofence:v <0x406f84d1>
+			streams:   0, words:     0
+		worklib.testfixture:sv <0x4c47a05f>
+			streams:  16, words: 25953
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                     Instances  Unique
+		Modules:                  5739     529
+		UDPs:                      613      12
+		Primitives:              11708      10
+		Timing outputs:           6203     485
+		Registers:                 472     181
+		Scalar wires:             6663       -
+		Expanded wires:             31       3
+		Always blocks:               5       5
+		Initial blocks:              9       9
+		Pseudo assignments:          4       4
+		Timing checks:            4111     350
+		Interconnect:            13688       -
+		Delayed tcheck signals:   1295     879
+		Simulation timescale:      1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux x86_64/64bit, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'geofence.fsdb'
+*Verdi* : Begin traversing the scope (testfixture), layer (0).
+*Verdi* : Enable +struct and +mda dumping.
+*Verdi* : End of traversing.
+----------------------
+-- Simulation Start --
+----------------------
+Object1(in):   X     Y     R
+          1:  103,  340,  118
+          2:  755,  510,  567
+          3:  103,   50,  294
+          4:  982,  280,  763
+          5:  298,  560,  252
+          6:  710,   50,  559
+Object1: Golde/Return => 1/1, PASS
+
+Object2(out):  X     Y     R
+          1:  298,  560,  178
+          2:  103,   50,  680
+          3:  103,  340,  397
+          4:  710,   50,  830
+          5:  755,  510,  574
+          6:  982,  280,  879
+Object2: Golde/Return => 0/0, PASS
+
+Object3(out):  X     Y     R
+          1:  400,   80,  272
+          2:  300,  800,  659
+          3:  980,  120,  840
+          4:  710,  620,  732
+          5:  103,  500,  342
+          6:  130,  210,   50
+Object3: Golde/Return => 0/0, PASS
+
+Object4(in):   X     Y     R
+          1:  298,  560,  430
+          2:  755,  510,  707
+          3:  103,   50,  116
+          4:  710,   50,  580
+          5:  982,  280,  850
+          6:  103,  340,  183
+Object4: Golde/Return => 1/1, PASS
+
+Object5(in):   X     Y     R
+          1:  755,  510,  345
+          2:  982,  280,  616
+          3:  298,  560,  122
+          4:  710,   50,  549
+          5:  103,   50,  553
+          6:  103,  340,  350
+Object5: Golde/Return => 1/1, PASS
+
+Object6(out):  X     Y     R
+          1:  755,  510,  743
+          2:  103,  340,  296
+          3:  710,   50,  898
+          4:  982,  280, 1021
+          5:  298,  560,  285
+          6:  103,   50,  580
+Object6: Golde/Return => 0/0, PASS
+
+Object7(out):  X     Y     R
+          1:  103,   50,  748
+          2:  710,   50,  148
+          3:  298,  560,  718
+          4:  755,  510,  420
+          5:  982,  280,  223
+          6:  103,  340,  784
+Object7: Golde/Return => 0/0, PASS
+
+Object8(out):  X     Y     R
+          1:  300,  800,  330
+          2:  710,  620,  690
+          3:  400,   80,  664
+          4:  103,  500,  150
+          5:  130,  210,  429
+          6:  980,  120, 1084
+Object8: Golde/Return => 0/0, PASS
+
+Object9(in):   X     Y     R
+          1:  302,  423,  574
+          2:  503,  521,  501
+          3:  694,  768,  420
+          4:   10,  664,  468
+          5:   43, 1003,  298
+          6:  694, 1023,  354
+Object9: Golde/Return => 1/1, PASS
+
+Object10(out):  X     Y     R
+          1:  710,  620,  316
+          2:  980,  120,  561
+          3:  130,  210, 1007
+          4:  400,   80,  863
+          5:  103,  500,  935
+          6:  300,  800,  730
+Object10: Golde/Return => 0/0, PASS
+
+Object11(in):   X     Y     R
+          1:  302,  423,  315
+          2:  694,  768,  546
+          3:  694, 1023,  630
+          4:  503,  521,  394
+          5:   43, 1003,  322
+          6:   10,  664,  146
+Object11: Golde/Return => 1/1, PASS
+
+Object12(in):   X     Y     R
+          1:  980,  120,  733
+          2:  710,  620,  217
+          3:  103,  500,  433
+          4:  130,  210,  594
+          5:  300,  800,  235
+          6:  400,   80,  603
+Object12: Golde/Return => 1/1, PASS
+
+Object13(out):  X     Y     R
+          1:  694, 1023,  392
+          2:   10,  664,  622
+          3:  503,  521,  172
+          4:  694,  768,  146
+          5:  302,  423,  392
+          6:   43, 1003,  694
+Object13: Golde/Return => 0/0, PASS
+
+Object14(in):   X     Y     R
+          1:  321,  870,  378
+          2: 1010,  643,  690
+          3:  321,  127,  365
+          4:  432,  123,  381
+          5:  567, 1003,  560
+          6:  970,  280,  668
+Object14: Golde/Return => 1/1, PASS
+
+Object15(out):  X     Y     R
+          1:  755,  510,  390
+          2:  103,   50,  732
+          3:  103,  340,  487
+          4:  298,  560,  193
+          5:  982,  280,  707
+          6:  710,   50,  720
+Object15: Golde/Return => 0/0, PASS
+
+Object16(out):  X     Y     R
+          1:  300,  800,  628
+          2:  980,  120,  875
+          3:  130,  210, 1096
+          4:  400,   80, 1039
+          5:  103,  500,  934
+          6:  710,  620,  416
+Object16: Golde/Return => 0/0, PASS
+
+Object17(out):  X     Y     R
+          1:  103,  500,  784
+          2:  130,  210,  753
+          3:  400,   80,  540
+          4:  710,  620,  320
+          5:  980,  120,  247
+          6:  300,  800,  732
+Object17: Golde/Return => 0/0, PASS
+
+Object18(in):   X     Y     R
+          1:  503,  521,  154
+          2:  694,  768,  215
+          3:  694, 1023,  398
+          4:   43, 1003,  562
+          5:   10,  664,  490
+          6:  302,  423,  320
+Object18: Golde/Return => 1/1, PASS
+
+Object19(in):   X     Y     R
+          1:   43, 1003,  595
+          2:  302,  423,  550
+          3:   10,  664,  646
+          4:  694, 1023,  168
+          5:  694,  768,  124
+          6:  503,  521,  369
+Object19: Golde/Return => 1/1, PASS
+
+Object20(in):   X     Y     R
+          1:  980,  120,  785
+          2:  103,  500,  214
+          3:  710,  620,  574
+          4:  130,  210,  142
+          5:  300,  800,  486
+          6:  400,   80,  300
+Object20: Golde/Return => 1/1, PASS
+
+Object21(out):  X     Y     R
+          1:  432,  123,  834
+          2:  321,  127,  833
+          3:  567, 1003,  173
+          4:  321,  870,  117
+          5:  970,  280,  885
+          6: 1010,  643,  686
+Object21: Golde/Return => 0/0, PASS
+
+Object22(in):   X     Y     R
+          1:  710,   50,  238
+          2:  103,  340,  777
+          3:  982,  280,  122
+          4:  755,  510,  308
+          5:  298,  560,  664
+          6:  103,   50,  788
+Object22: Golde/Return => 1/1, PASS
+
+Object23(in):   X     Y     R
+          1:  982,  280,  586
+          2:  103,   50,  337
+          3:  755,  510,  464
+          4:  710,   50,  348
+          5:  103,  340,  324
+          6:  298,  560,  364
+Object23: Golde/Return => 1/1, PASS
+
+Object24(in):   X     Y     R
+          1:  503,  521,  205
+          2:   43, 1003,  571
+          3:  302,  423,   69
+          4:   10,  664,  337
+          5:  694, 1023,  661
+          6:  694,  768,  481
+Object24: Golde/Return => 1/1, PASS
+
+Object25(out):  X     Y     R
+          1:  321,  127,  922
+          2:  567, 1003,  228
+          3:  970,  280,  672
+          4: 1010,  643,  363
+          5:  432,  123,  875
+          6:  321,  870,  464
+Object25: Golde/Return => 0/0, PASS
+
+Object26(in):   X     Y     R
+          1:  970,  280,  684
+          2:  432,  123,  771
+          3: 1010,  643,  448
+          4:  321,  127,  802
+          5:  321,  870,  302
+          6:  567, 1003,  144
+Object26: Golde/Return => 1/1, PASS
+
+Object27(out):  X     Y     R
+          1:  755,  510,  386
+          2:  103,   50,  848
+          3:  982,  280,  709
+          4:  710,   50,  778
+          5:  103,  340,  607
+          6:  298,  560,  313
+Object27: Golde/Return => 0/0, PASS
+
+Object28(out):  X     Y     R
+          1:  503,  521,  494
+          2:  302,  423,  346
+          3:  694, 1023,  782
+          4:   10,  664,   40
+          5:   43, 1003,  378
+          6:  694,  768,  689
+Object28: Golde/Return => 0/0, PASS
+
+Object29(out):  X     Y     R
+          1:  567, 1003,  516
+          2:  970,  280,  823
+          3:  321,  870,  269
+          4:  432,  123,  540
+          5: 1010,  643,  790
+          6:  321,  127,  503
+Object29: Golde/Return => 0/0, PASS
+
+Object30(in):   X     Y     R
+          1:  103,  340,  769
+          2:  710,   50,  334
+          3:  103,   50,  822
+          4:  298,  560,  613
+          5:  755,  510,  203
+          6:  982,  280,  126
+Object30: Golde/Return => 1/1, PASS
+
+Object31(out):  X     Y     R
+          1:  503,  521,  582
+          2:  694, 1023, 1097
+          3:   10,  664,  571
+          4:   43, 1003,  904
+          5:  694,  768,  893
+          6:  302,  423,  380
+Object31: Golde/Return => 0/0, PASS
+
+Object32(out):  X     Y     R
+          1:  694, 1023,  377
+          2:   10,  664,  968
+          3:  503,  521,  530
+          4:   43, 1003,  959
+          5:  302,  423,  754
+          6:  694,  768,  279
+Object32: Golde/Return => 0/0, PASS
+
+Object33(in):   X     Y     R
+          1:  321,  870,  389
+          2: 1010,  643,  378
+          3:  567, 1003,  373
+          4:  970,  280,  490
+          5:  321,  127,  595
+          6:  432,  123,  549
+Object33: Golde/Return => 1/1, PASS
+
+Object34(in):   X     Y     R
+          1:  103,  500,  307
+          2:  400,   80,  430
+          3:  130,  210,  410
+          4:  710,  620,  319
+          5:  980,  120,  690
+          6:  300,  800,  310
+Object34: Golde/Return => 1/1, PASS
+
+Object35(in):   X     Y     R
+          1:  503,  521,  299
+          2:   43, 1003,  421
+          3:  694, 1023,  622
+          4:   10,  664,  214
+          5:  694,  768,  496
+          6:  302,  423,  213
+Object35: Golde/Return => 1/1, PASS
+
+Object36(out):  X     Y     R
+          1:  103,   50,  918
+          2:  298,  560,  884
+          3:  710,   50,  311
+          4:  103,  340,  962
+          5:  982,  280,  233
+          6:  755,  510,  531
+Object36: Golde/Return => 0/0, PASS
+
+Object37(out):  X     Y     R
+          1:   10,  664,  815
+          2:  694,  768,  180
+          3:   43, 1003,  743
+          4:  694, 1023,  130
+          5:  302,  423,  695
+          6:  503,  521,  491
+Object37: Golde/Return => 0/0, PASS
+
+Object38(out):  X     Y     R
+          1:  400,   80,  836
+          2:  300,  800,  110
+          3:  103,  500,  454
+          4:  980,  120, 1042
+          5:  130,  210,  720
+          6:  710,  620,  502
+Object38: Golde/Return => 0/0, PASS
+
+Object39(in):   X     Y     R
+          1:  321,  870,  724
+          2:  567, 1003,  786
+          3:  321,  127,  333
+          4:  432,  123,  230
+          5:  970,  280,  334
+          6: 1010,  643,  561
+Object39: Golde/Return => 1/1, PASS
+
+Object40(in):   X     Y     R
+          1:  400,   80,  493
+          2:  103,  500,  816
+          3:  710,  620,  426
+          4:  130,  210,  742
+          5:  300,  800,  811
+          6:  980,  120,  150
+Object40: Golde/Return => 1/1, PASS
+
+Object41(out):  X     Y     R
+          1:  970,  280,  344
+          2:  321,  870,  774
+          3:  432,  123,  217
+          4:  321,  127,  326
+          5: 1010,  643,  600
+          6:  567, 1003,  840
+Object41: Golde/Return => 0/0, PASS
+
+Object42(out):  X     Y     R
+          1:  321,  127,  936
+          2:  321,  870,  655
+          3:  970,  280,  519
+          4:  567, 1003,  454
+          5:  432,  123,  865
+          6: 1010,  643,  160
+Object42: Golde/Return => 0/0, PASS
+
+Object43(in):   X     Y     R
+          1:  567, 1003,  551
+          2:  321,  127,  600
+          3: 1010,  643,  261
+          4:  321,  870,  599
+          5:  432,  123,  520
+          6:  970,  280,  282
+Object43: Golde/Return => 1/1, PASS
+
+Object44(in):   X     Y     R
+          1:  710,  620,  514
+          2:  130,  210,  270
+          3:  300,  800,  598
+          4:  103,  500,  415
+          5:  400,   80,  130
+          6:  980,  120,  586
+Object44: Golde/Return => 1/1, PASS
+
+Object45(out):  X     Y     R
+          1:   10,  664,  849
+          2:  694, 1023,  924
+          3:  503,  521,  444
+          4:  694,  768,  669
+          5:  302,  423,  471
+          6:   43, 1003, 1085
+Object45: Golde/Return => 0/0, PASS
+
+Object46(out):  X     Y     R
+          1:  980,  120,  968
+          2:  710,  620,  500
+          3:  300,  800,  113
+          4:  103,  500,  249
+          5:  130,  210,  517
+          6:  400,   80,  664
+Object46: Golde/Return => 0/0, PASS
+
+Object47(out):  X     Y     R
+          1:  103,  500,  420
+          2:  300,  800,  739
+          3:  400,   80,  270
+          4:  130,  210,  130
+          5:  710,  620,  792
+          6:  980,  120,  850
+Object47: Golde/Return => 0/0, PASS
+
+Object48(in):   X     Y     R
+          1:  321,  870,  264
+          2: 1010,  643,  511
+          3:  321,  127,  576
+          4:  567, 1003,  334
+          5:  432,  123,  556
+          6:  970,  280,  613
+Object48: Golde/Return => 1/1, PASS
+
+Object49(out):  X     Y     R
+          1:  567, 1003, 1016
+          2: 1010,  643, 1059
+          3:  321,  127,  222
+          4:  432,  123,  332
+          5:  321,  870,  801
+          6:  970,  280,  888
+Object49: Golde/Return => 0/0, PASS
+
+Object50(out):  X     Y     R
+          1:  321,  870,  130
+          2:  432,  123,  883
+          3:  970,  280,  969
+          4:  567, 1003,  246
+          5:  321,  127,  873
+          6: 1010,  643,  775
+Object50: Golde/Return => 0/0, PASS
+
+-------------------------------------------------
+--    Simulation finish,  ALL PASS             --
+-------------------------------------------------
+Simulation complete via $finish(1) at time 122750 NS + 0
+../sim/tb.sv:146              $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s084: Exiting on Mar 04, 2025 at 13:52:48 CST  (total: 00:00:17)

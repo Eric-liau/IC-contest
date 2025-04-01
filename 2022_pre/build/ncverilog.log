@@ -1,0 +1,334 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Feb 18, 2025 at 22:55:45 CST
+ncverilog
+	/home/LiauYiShang/Iccontest/2022_pre/sim/tb.sv
+	/home/LiauYiShang/Iccontest/2022_pre/syn/JAM_syn.v
+	-v
+	/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v
+	+nc64bit
+	+access+r
+	+define+FSDB_FILE="JAM.fsdb"
+	+define+SDF
+	+define++P3
+	+define+SDFFILE="/home/LiauYiShang/Iccontest/2022_pre/syn/JAM_syn.sdf"
+file: /home/LiauYiShang/Iccontest/2022_pre/sim/tb.sv
+`define SDFFILE    "../syn/JAM_syn.sdf"
+                                       |
+ncvlog: *W,MACNDF (/home/LiauYiShang/Iccontest/2022_pre/sim/tb.sv,3|39): The text macro 'SDFFILE' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+file: /home/LiauYiShang/Iccontest/2022_pre/syn/JAM_syn.v
+	module worklib.sort:v
+		errors: 0, warnings: 0
+	module worklib.JAM_DW01_add_0_DW01_add_1:v
+		errors: 0, warnings: 0
+	module worklib.JAM:v
+		errors: 0, warnings: 0
+file: /usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v
+	module tsmc13_neg.AOI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI211XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI31X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI33X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X8:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR3X6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI211XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI31XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKAND2X12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRXL:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 \line_reg[6][0]  ( .D(n296), .CK(CLK), .RN(n13), .QN(n270) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,68|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \line_reg[2][2]  ( .D(n307), .CK(CLK), .RN(n13), .QN(n281) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,69|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \line_reg[2][0]  ( .D(n291), .CK(CLK), .RN(n14), .QN(n265) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,70|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \line_reg[3][2]  ( .D(n308), .CK(CLK), .RN(n12), .QN(n282) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,71|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \line_reg[1][2]  ( .D(n306), .CK(CLK), .RN(n13), .QN(n280) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,72|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \line_reg[1][1]  ( .D(n298), .CK(CLK), .RN(n13), .QN(n272) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,73|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \line_reg[5][1]  ( .D(n303), .CK(CLK), .RN(n13), .QN(n277) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,74|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \line_reg[0][2]  ( .D(n310), .CK(CLK), .RN(n12), .QN(n284) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,75|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \line_reg[0][1]  ( .D(n302), .CK(CLK), .RN(n13), .QN(n276) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,76|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \line_reg[0][0]  ( .D(n294), .CK(CLK), .RN(n14), .QN(n268) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,77|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \line_reg[4][1]  ( .D(n301), .CK(CLK), .RN(n13), .QN(n275) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,78|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \line_reg[4][0]  ( .D(n293), .CK(CLK), .RN(n14), .QN(n267) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,79|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFSX1 \line_reg[7][2]  ( .D(n313), .CK(CLK), .SN(n459), .QN(n287) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,92|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \line_reg[7][1]  ( .D(n305), .CK(CLK), .SN(n459), .QN(n279) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,93|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \line_reg[7][0]  ( .D(n297), .CK(CLK), .SN(n459), .QN(n271) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,94|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \line_reg[6][2]  ( .D(n312), .CK(CLK), .SN(n459), .QN(n286) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,95|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \line_reg[6][1]  ( .D(n304), .CK(CLK), .SN(n459), .QN(n278) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,96|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \line_reg[5][2]  ( .D(n311), .CK(CLK), .SN(n459), .QN(n285) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,97|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \line_reg[5][0]  ( .D(n295), .CK(CLK), .SN(n459), .QN(n269) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,98|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \line_reg[4][2]  ( .D(n309), .CK(CLK), .SN(n459), .QN(n283) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,99|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \line_reg[3][1]  ( .D(n300), .CK(CLK), .SN(n459), .QN(n274) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,100|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \line_reg[3][0]  ( .D(n292), .CK(CLK), .SN(n459), .QN(n266) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,101|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \line_reg[2][1]  ( .D(n299), .CK(CLK), .SN(n459), .QN(n273) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,102|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \line_reg[1][0]  ( .D(n290), .CK(CLK), .SN(n459), .QN(n264) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,103|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \cur_min_reg[1]  ( .D(n413), .CK(CLK), .SN(n459), .Q(n261) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,108|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): QN
+
+  JAM_DW01_add_0_DW01_add_1 r398 ( .A(cur_cost), .B({1'b0, 1'b0, 1'b0, Cost}), 
+                               |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,813|31): 1 output port was not connected:
+ncelab: (../syn/JAM_syn.v,726): CO
+
+  ADDFHX4 U9 ( .A(A[1]), .B(B[1]), .CI(n7), .CO(n1) );
+           |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,751|11): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,14693): S
+
+  DFFRX1 \W_reg[2]  ( .D(N181), .CK(CLK), .RN(n156), .QN(n127) );
+                  |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,845|18): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \W_reg[0]  ( .D(N179), .CK(CLK), .RN(n157), .QN(n125) );
+                  |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,846|18): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \W_reg[1]  ( .D(N180), .CK(CLK), .RN(n157), .QN(n123) );
+                  |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,847|18): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \J_reg[0]  ( .D(N182), .CK(CLK), .RN(n157), .QN(n121) );
+                  |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,848|18): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \J_reg[1]  ( .D(N183), .CK(CLK), .RN(n156), .QN(n119) );
+                  |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,849|18): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \J_reg[2]  ( .D(N184), .CK(CLK), .RN(n156), .QN(n117) );
+                  |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,850|18): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRXL \state_reg[2]  ( .D(nextstate[2]), .CK(CLK), .RN(n230), .Q(state[2])
+                      |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,860|22): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18238): QN
+
+  DFFSX1 \MinCost_reg[0]  ( .D(n99), .CK(CLK), .SN(n230), .QN(n104) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,865|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \MinCost_reg[1]  ( .D(n102), .CK(CLK), .SN(n230), .QN(n105) );
+                        |
+ncelab: *W,CUVWSP (../syn/JAM_syn.v,866|24): 1 output port was not connected:
+ncelab: (/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v,18583): Q
+
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "/home/LiauYiShang/Iccontest/2022_pre/syn/JAM_syn.sdf"
+	Compiled SDF file "JAM_syn.sdf.X" older than source SDF file "/home/LiauYiShang/Iccontest/2022_pre/syn/JAM_syn.sdf".
+	Recompiling.
+	Writing compiled SDF file to "JAM_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     JAM_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_JAM
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 2518  Annotated = 100.00% -- No. of Tchecks = 630  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        2518	        2518	      100.00
+		      $width	         315	         315	      100.00
+		  $setuphold	         315	         315	      100.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc13_neg.DFFRHQX1:v <0x260f8e74>
+			streams:   0, words:     0
+		tsmc13_neg.DFFRXL:v <0x221c47f1>
+			streams:   0, words:     0
+		tsmc13_neg.DFFSXL:v <0x535b74ae>
+			streams:   0, words:     0
+		tsmc13_neg.DFFX2:v <0x6f7adc79>
+			streams:   0, words:     0
+		worklib.JAM:v <0x58e7763b>
+			streams:   0, words:     0
+		worklib.testfixture:sv <0x2442afd2>
+			streams:  14, words: 30950
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  760      94
+		UDPs:                     106       1
+		Primitives:              1875       8
+		Timing outputs:           866      35
+		Registers:                134      37
+		Scalar wires:             978       -
+		Expanded wires:             7       1
+		Vectored wires:             1       -
+		Always blocks:              4       4
+		Initial blocks:             8       8
+		Cont. assignments:          1       1
+		Pseudo assignments:         1       1
+		Timing checks:            945     147
+		Interconnect:            2322       -
+		Delayed tcheck signals:   315     114
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux x86_64/64bit, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'JAM.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*******************************
+** Simulation Start          **
+*******************************
+PATTERN:   3
+-------------- Cost Table --------------
+Jobs       0   1   2   3   4   5   6   7
+worker0:  81  60  60  65  96  60  65  96
+worker1:  96  60  66  96  60  60  60  81
+worker2:  96  66  60  99  60  81  65  65
+worker3:  66  96  80  99  81  81  96  60
+worker4:  81  96  65  96  60  96  60  81
+worker5:  60  96  80  96  80  60  81  60
+worker6:  99  60  99  65  80  80  81  66
+worker7:  65  60  60  99  99  80  60  96
+----------------------------------------------------------------------
+Get Valid at cycle:    412656
+receive MinCost/MatchCount=  485/ 9 , golden MinCost/MatchCount= 485/ 9
+----------------------------------------------------------------------
+*************************
+**  FUNCTION  CORRECT  **
+*************************
+
+Simulation complete via $finish(1) at time 4126555 NS + 0
+../sim/tb.sv:186                 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s084: Exiting on Feb 18, 2025 at 22:56:38 CST  (total: 00:00:53)
