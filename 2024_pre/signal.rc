@@ -1,0 +1,138 @@
+Magic 271485
+Revision Verdi_Q-2020.03
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 1920 23 1920 1137 187 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/LiauYiShang/Iccontest/2024_pre2/Bicubic.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 156413.357472 1720546.932190
+cursor 1065000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 28
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByValue
+
+
+addGroup "G1"
+activeDirFile "" "/home/LiauYiShang/Iccontest/2024_pre2/Bicubic.fsdb"
+addSignal -h 15 /testfixture/u_Bicubic/RST
+addSignal -h 15 -holdScope CLK
+addSignal -h 15 -holdScope cal
+addSignal -h 15 -holdScope cal_busy
+addSignal -h 15 -holdScope cal_fin
+addSignal -h 15 -holdScope usereg1
+addSignal -h 15 -holdScope state[2:0]
+addSignal -h 15 -holdScope state1[2:0]
+addSignal -h 15 -holdScope wait_read
+addSignal -h 15 -holdScope wait_write
+addSignal -h 15 -UNSIGNED -UDEC -holdScope count[4:0]
+addSignal -h 15 -holdScope DONE
+addSignal -h 15 -holdScope rom_H[6:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rom_V[6:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rom_A[13:0]
+addSignal -h 15 -holdScope rom_Q[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rom_A_reg[13:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope x[6:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope y[6:0]
+addSignal -h 15 -holdScope new_x[5:0]
+addSignal -h 15 -holdScope new_y[5:0]
+addSignal -h 15 -holdScope mul_W[5:0]
+addSignal -h 15 -holdScope mul_x[5:0]
+addSignal -h 15 -holdScope div_W[5:0]
+addSignal -h 15 -holdScope mul_y[5:0]
+addSignal -h 15 -holdScope div_H[5:0]
+addSignal -h 15 -holdScope dot_reg0[3:0]
+addSignal -h 15 -holdScope dot_reg1[3:0]
+addSignal -expanded -h 15 -holdScope dot[3:0]
+addSignal -h 15 -holdScope dot[3][7:0]
+addSignal -h 15 -holdScope dot[2][7:0]
+addSignal -h 15 -holdScope dot[1][7:0]
+addSignal -h 15 -holdScope dot[0][7:0]
+addSignal -h 15 -holdScope cal_result[7:0]
+addGroup "G2" -e FALSE
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/u_Bicubic/u_ImgROM/Ai[13:0]
+addSignal -h 15 -holdScope CEN
+addSignal -h 15 -holdScope CLK
+addSignal -h 15 -holdScope Q[7:0]
+addSignal -h 15 -holdScope Qi[7:0]
+addSignal -h 15 /testfixture/u_Bicubic/rom_Q[7:0]
+addGroup "G3"
+addSignal -h 15 /testfixture/u_Bicubic/u_ResultSRAM/CLK
+addSignal -h 15 -UNSIGNED -UDEC -holdScope A[13:0]
+addSignal -h 15 -holdScope Ai[13:0]
+addSignal -h 15 -holdScope CEN
+addSignal -h 15 -holdScope CENi
+addSignal -h 15 -holdScope WEN
+addSignal -h 15 -holdScope WENi
+addSignal -h 15 -holdScope D[7:0]
+addSignal -h 15 -holdScope Di[7:0]
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/u_Bicubic/sram_A[13:0]
+addSignal -h 15 -holdScope sram_D[7:0]
+addGroup "G4" -e FALSE
+addSignal -h 15 /testfixture/u_Bicubic/dotcal/state[2:0]
+addSignal -h 15 -holdScope mul[5:0]
+addSignal -h 15 -holdScope div[5:0]
+addSignal -h 15 -2COMP -HEX -holdScope a[13:0]
+addSignal -h 15 -2COMP -HEX -holdScope b[13:0]
+addSignal -h 15 -2COMP -HEX -holdScope c[13:0]
+addSignal -h 15 -2COMP -HEX -holdScope res[28:0]
+addSignal -h 15 -2COMP -HEX -holdScope res1[25:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope result[7:0]
+addGroup "G5"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/LiauYiShang/Iccontest/2024_pre2/Bicubic.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/testfixture"
+"/testfixture/u_Bicubic"
+"/testfixture/u_Bicubic/dotcal"
+"/testfixture/u_Bicubic/u_ImgROM"
+
+SCOPE_LIST_BEGIN
+"/testfixture"
+"/testfixture/u_Bicubic"
+"/testfixture/u_Bicubic/u_ImgROM"
+"/testfixture/u_Bicubic/u_ResultSRAM"
+"/testfixture/u_Bicubic/dotcal"
+"/testfixture/READ_PATTERN"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

@@ -1,0 +1,26 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+tb.sv
+Bicubic_syn.v
+-VFILE
+/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v
+-DEFINE
+FSDB_FILE=\"Bicubic.fsdb\"
+-DEFINE
+SDF
+-DEFINE
+SDFFILE=\"Bicubic_syn.sdf\"
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

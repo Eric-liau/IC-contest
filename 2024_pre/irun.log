@@ -1,0 +1,67 @@
+irun: 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun	15.20-s084: Started on Feb 12, 2025 at 02:36:40 CST
+irun
+	tb.sv
+	Bicubic.v
+	+nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE="Bicubic.fsdb"
+
+   User defined plus("+") options:
+	+nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE="Bicubic.fsdb"
+
+Recompiling... reason: file './tb.sv' is newer than expected.
+	expected: Wed Feb 12 02:34:35 2025
+	actual:   Wed Feb 12 02:35:03 2025
+file: tb.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testfixture
+   $fsdbDumpfile("Bicubic.fsdb");
+               |
+ncelab: *W,MISSYST (./tb.sv,44|15): Unrecognized system task or function: $fsdbDumpfile (did not match built-in or user-defined names) [2.7.4(IEEE Std 1364-2001)].
+If item was defined in a shared-object library, the problem could be:
+libvpi.so: cannot open shared object file: No such file or directory or file is not valid ELFCLASS32 library.
+libpli.so: wrong ELF class: ELFCLASS64.
+   $fsdbDumpvars();
+               |
+ncelab: *W,MISSYST (./tb.sv,45|15): Unrecognized system task or function: $fsdbDumpvars (did not match built-in or user-defined names) [2.7.4(IEEE Std 1364-2001)].
+   $fsdbDumpMDA;
+              |
+ncelab: *W,MISSYST (./tb.sv,46|14): Unrecognized system task or function: $fsdbDumpMDA (did not match built-in or user-defined names) [2.7.4(IEEE Std 1364-2001)].
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.testfixture:sv <0x27e50709>
+			streams:  32, words: 38890
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 6       6
+		Primitives:             57       1
+		Timing outputs:          8       1
+		Registers:             165     166
+		Scalar wires:           17       -
+		Expanded wires:         52       5
+		Vectored wires:         27       -
+		Always blocks:          23      23
+		Initial blocks:         10      10
+		Cont. assignments:      15      18
+		Pseudo assignments:     13      13
+		Timing checks:         162      42
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+   $fsdbDumpfile("Bicubic.fsdb");
+               |
+ncsim: *E,MSSYSTF (./tb.sv,44|15): User Defined system task or function ($fsdbDumpfile) registered during elaboration and used within the simulation has not been registered during simulation.
+   $fsdbDumpvars();
+               |
+ncsim: *E,MSSYSTF (./tb.sv,45|15): User Defined system task or function ($fsdbDumpvars) registered during elaboration and used within the simulation has not been registered during simulation.
+   $fsdbDumpMDA;
+              |
+ncsim: *E,MSSYSTF (./tb.sv,46|14): User Defined system task or function ($fsdbDumpMDA) registered during elaboration and used within the simulation has not been registered during simulation.
+TOOL:	irun	15.20-s084: Exiting on Feb 12, 2025 at 02:36:41 CST  (total: 00:00:01)

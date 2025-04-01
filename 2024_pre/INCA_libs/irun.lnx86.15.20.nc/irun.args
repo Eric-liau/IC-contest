@@ -1,0 +1,7 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+tb.sv
+Bicubic.v
++nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE=\"Bicubic.fsdb\"

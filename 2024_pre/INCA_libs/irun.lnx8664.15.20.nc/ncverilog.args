@@ -1,0 +1,13 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+tb.sv
+Bicubic_syn.v
+-v
+/usr/cad/lib/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v
++nc64bit
++access+r
++define+FSDB_FILE=\"Bicubic.fsdb\"
++define+SDF
++define+SDFFILE=\"Bicubic_syn.sdf\"

@@ -1,0 +1,24 @@
+s1(12Feb2025:01:34:23):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+define+FSDB+nc64bit 
+s2(12Feb2025:01:36:54):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+define+FSDB+nc64bit 
+s3(12Feb2025:01:37:09):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+define+FSDB+nc64bit 
+s4(12Feb2025:01:38:18):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+define+FSDB+nc64bit 
+s5(12Feb2025:01:40:25):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+define+FSDB+nc64bit 
+s6(12Feb2025:01:41:12):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+define+FSDB+nc64bit 
+s7(12Feb2025:01:47:08):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+define+FSDB+nc64bit 
+s8(12Feb2025:01:47:43):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+nc64bit 
+s9(12Feb2025:01:49:02):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+define+FSDB+nc64bit 
+s10(12Feb2025:01:50:34):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+define+FSDB+nc64bit 
+s11(12Feb2025:01:51:43):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+nc64bit 
+s12(12Feb2025:01:52:48):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+define+FSDB_FILE=Bicubic.fsdb+nc64bit 
+s13(12Feb2025:01:57:00):  ncverilog tb.sv Bicubic.v +nc64bit+define+USECOLOR+define+P1+define+FSDB_FILE=Bicubic.fsdb+nc64bit+access+r 
+s14(12Feb2025:01:58:17):  ncverilog tb.sv Bicubic.v +nc64bit+access+r+define+USECOLOR+define+P1 
+s15(12Feb2025:01:59:02):  ncverilog tb.sv Bicubic.v +nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE=Bicubic.fsdb 
+s16(12Feb2025:02:10:39):  ncverilog tb.sv Bicubic.v +nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE=Bicubic.fsdb 
+s17(12Feb2025:02:12:49):  ncverilog tb.sv Bicubic.v addrcal.v dotcal.v +nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE=Bicubic.fsdb 
+s18(12Feb2025:02:13:14):  ncverilog tb.sv Bicubic.v +nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE=Bicubic.fsdb 
+s19(12Feb2025:02:14:55):  ncverilog tb.sv Bicubic.v +nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE="Bicubic.fsdb" 
+s20(12Feb2025:02:15:00):  ncverilog tb.sv Bicubic.v +nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE="Bicubic.fsdb" 
+s21(12Feb2025:02:34:05):  ncverilog tb.sv Bicubic.v +nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE="Bicubic.fsdb" 
+s22(12Feb2025:02:34:36):  ncverilog tb.sv Bicubic.v +nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE="Bicubic.fsdb" 
+s23(12Feb2025:02:34:39):  ncverilog tb.sv Bicubic.v +nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE="Bicubic.fsdb" 
+s24(12Feb2025:02:36:40):  irun tb.sv Bicubic.v +nc64bit+access+r+define+USECOLOR+define+P1+define+FSDB_FILE="Bicubic.fsdb" 

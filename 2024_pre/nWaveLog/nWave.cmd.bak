@@ -1,0 +1,123 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/LiauYiShang/Iccontest/2024_pre3/Bicubic.fsdb}
+wvRestoreSignal -win $_nWave1 "/home/LiauYiShang/Iccontest/2024_pre2/signal.rc" \
+           -overWriteAutoAlias on -appendSignals on
+wvSelectGroup -win $_nWave1 {G3}
+wvSelectGroup -win $_nWave1 {G4}
+wvSelectSignal -win $_nWave1 {( "G4" 9 )} 
+wvSelectSignal -win $_nWave1 {( "G4" 3 )} 
+wvSetPosition -win $_nWave1 {("G4" 3)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G4" 3)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testfixture/u_Bicubic/u_ResultSRAM"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/u_Bicubic/rom_addr"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/u_Bicubic/dotcal"
+wvSetPosition -win $_nWave1 {("G4" 5)}
+wvSetPosition -win $_nWave1 {("G4" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_Bicubic/RST} \
+{/testfixture/u_Bicubic/CLK} \
+{/testfixture/u_Bicubic/cal} \
+{/testfixture/u_Bicubic/cal_busy} \
+{/testfixture/u_Bicubic/cal_fin} \
+{/testfixture/u_Bicubic/usereg1} \
+{/testfixture/u_Bicubic/state\[2:0\]} \
+{/testfixture/u_Bicubic/state1\[2:0\]} \
+{/testfixture/u_Bicubic/wait_read} \
+{/testfixture/u_Bicubic/wait_write} \
+{/testfixture/u_Bicubic/count\[4:0\]} \
+{/testfixture/u_Bicubic/DONE} \
+{/testfixture/u_Bicubic/rom_H\[6:0\]} \
+{/testfixture/u_Bicubic/rom_V\[6:0\]} \
+{/testfixture/u_Bicubic/rom_A\[13:0\]} \
+{/testfixture/u_Bicubic/rom_Q\[7:0\]} \
+{/testfixture/u_Bicubic/rom_A_reg\[13:0\]} \
+{/testfixture/u_Bicubic/x\[6:0\]} \
+{/testfixture/u_Bicubic/y\[6:0\]} \
+{/testfixture/u_Bicubic/new_x\[5:0\]} \
+{/testfixture/u_Bicubic/new_y\[5:0\]} \
+{/testfixture/u_Bicubic/mul_W\[5:0\]} \
+{/testfixture/u_Bicubic/mul_x\[5:0\]} \
+{/testfixture/u_Bicubic/div_W\[5:0\]} \
+{/testfixture/u_Bicubic/mul_y\[5:0\]} \
+{/testfixture/u_Bicubic/div_H\[5:0\]} \
+{/testfixture/u_Bicubic/dot_reg0\[3:0\]} \
+{/testfixture/u_Bicubic/dot_reg1\[3:0\]} \
+{/testfixture/u_Bicubic/dot\[3:0\]} \
+{/testfixture/u_Bicubic/dot\[3\]\[7:0\]} \
+{/testfixture/u_Bicubic/dot\[2\]\[7:0\]} \
+{/testfixture/u_Bicubic/dot\[1\]\[7:0\]} \
+{/testfixture/u_Bicubic/dot\[0\]\[7:0\]} \
+{/testfixture/u_Bicubic/cal_result\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testfixture/u_Bicubic/u_ImgROM/Ai\[13:0\]} \
+{/testfixture/u_Bicubic/u_ImgROM/CEN} \
+{/testfixture/u_Bicubic/u_ImgROM/CLK} \
+{/testfixture/u_Bicubic/u_ImgROM/Q\[7:0\]} \
+{/testfixture/u_Bicubic/u_ImgROM/Qi\[7:0\]} \
+{/testfixture/u_Bicubic/rom_Q\[7:0\]} \
+}
+wvCollapseGroup -win $_nWave1 "G2"
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testfixture/u_Bicubic/u_ResultSRAM/CLK} \
+{/testfixture/u_Bicubic/u_ResultSRAM/A\[13:0\]} \
+{/testfixture/u_Bicubic/u_ResultSRAM/Ai\[13:0\]} \
+{/testfixture/u_Bicubic/u_ResultSRAM/CEN} \
+{/testfixture/u_Bicubic/u_ResultSRAM/CENi} \
+{/testfixture/u_Bicubic/u_ResultSRAM/WEN} \
+{/testfixture/u_Bicubic/u_ResultSRAM/WENi} \
+{/testfixture/u_Bicubic/u_ResultSRAM/D\[7:0\]} \
+{/testfixture/u_Bicubic/u_ResultSRAM/Di\[7:0\]} \
+{/testfixture/u_Bicubic/sram_A\[13:0\]} \
+{/testfixture/u_Bicubic/sram_D\[7:0\]} \
+}
+wvCollapseGroup -win $_nWave1 "G3"
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testfixture/u_Bicubic/dotcal/state\[2:0\]} \
+{/testfixture/u_Bicubic/dotcal/mul\[5:0\]} \
+{/testfixture/u_Bicubic/dotcal/div\[5:0\]} \
+{/testfixture/u_Bicubic/dotcal/divt\[17:0\]} \
+{/testfixture/u_Bicubic/dotcal/mult_reg\[17:0\]} \
+{/testfixture/u_Bicubic/dotcal/a\[13:0\]} \
+{/testfixture/u_Bicubic/dotcal/b\[13:0\]} \
+{/testfixture/u_Bicubic/dotcal/c\[13:0\]} \
+{/testfixture/u_Bicubic/dotcal/res\[28:0\]} \
+{/testfixture/u_Bicubic/dotcal/res1\[25:0\]} \
+{/testfixture/u_Bicubic/dotcal/result\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+}
+wvSelectSignal -win $_nWave1 {( "G4" 4 5 )} 
+wvSetPosition -win $_nWave1 {("G4" 5)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G4" 2 3 4 5 )} 
+wvSelectSignal -win $_nWave1 {( "G4" 2 3 4 5 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "G4" 5 )} 
+wvSetCursor -win $_nWave1 852748.097496 -snap {("G4" 5)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 648896.340498 -snap {("G4" 3)}
+wvSetCursor -win $_nWave1 962294.602424 -snap {("G4" 2)}
+wvSelectSignal -win $_nWave1 {( "G4" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G4" 3 )} 
+wvSetCursor -win $_nWave1 1003255.469484 -snap {("G4" 1)}
+wvSetCursor -win $_nWave1 977535.855284 -snap {("G4" 1)}
+wvSetCursor -win $_nWave1 1001350.312877 -snap {("G4" 1)}
+wvSelectSignal -win $_nWave1 {( "G4" 2 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 829886.218206 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 847985.205977 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 868941.928659 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 888946.073037 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 914665.687238 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 946100.771261 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 916570.843845 -snap {("G1" 2)}
+wvSaveSignal -win $_nWave1 "/home/LiauYiShang/Iccontest/2024_pre2/signal.rc"
+wvExit
